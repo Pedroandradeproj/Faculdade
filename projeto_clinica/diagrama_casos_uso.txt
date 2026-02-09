@@ -1,0 +1,20 @@
+# Passo 5 - Diagrama de Casos de Uso
+
+## Atores:
+- **Secretária**
+- **Médico**
+
+## Casos de Uso:
+
+### Secretária:
+- Cadastrar Paciente
+- Agendar Consulta (include Cadastrar Paciente)
+- Confirmar Consulta (include Cadastrar Paciente)
+- Cancelar Consulta
+
+### Médico:
+- Cancelar Consulta (extend)
+- Gerar Receita (include Imprimir Receita)
+
+### Sistema:
+- Imprimir Receita (automático)

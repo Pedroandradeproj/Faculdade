@@ -1,0 +1,61 @@
+# Passo 3 - Lógica e Tabelas Verdade
+
+## Expressões Lógicas:
+
+**Consulta Normal:** (A ∧ B ∧ C) ∨ (B ∧ C ∧ D)
+
+**Emergência:** C ∧ (B ∨ D)
+
+## Tabela Verdade - Consulta Normal:
+
+| A | B | C | D | Resultado |
+|---|---|---|---|-----------|
+| F | F | F | F | F |
+| F | F | F | V | F |
+| F | F | V | F | F |
+| F | F | V | V | F |
+| F | V | F | F | F |
+| F | V | F | V | F |
+| F | V | V | F | V |
+| F | V | V | V | V |
+| V | F | F | F | F |
+| V | F | F | V | F |
+| V | F | V | F | F |
+| V | F | V | V | F |
+| V | V | F | F | F |
+| V | V | F | V | F |
+| V | V | V | F | V |
+| V | V | V | V | V |
+
+**Total de situações de atendimento: 4/16**
+
+## Tabela Verdade - Emergência:
+
+| A | B | C | D | Resultado |
+|---|---|---|---|-----------|
+| F | F | F | F | F |
+| F | F | F | V | F |
+| F | F | V | F | F |
+| F | F | V | V | V |
+| F | V | F | F | F |
+| F | V | F | V | F |
+| F | V | V | F | V |
+| F | V | V | V | V |
+| V | F | F | F | F |
+| V | F | F | V | F |
+| V | F | V | F | F |
+| V | F | V | V | V |
+| V | V | F | F | F |
+| V | V | F | V | F |
+| V | V | V | F | V |
+| V | V | V | V | V |
+
+**Total de situações de atendimento: 6/16**
+
+## Situação Prática:
+
+Condições: A=F, B=V, C=V, D=F
+
+**Consulta Normal:** (F ∧ V ∧ V) ∨ (V ∧ V ∧ F) = F ∨ F = **NÃO ATENDIDO**
+
+**Emergência:** V ∧ (V ∨ F) = V ∧ V = **ATENDIDO**
