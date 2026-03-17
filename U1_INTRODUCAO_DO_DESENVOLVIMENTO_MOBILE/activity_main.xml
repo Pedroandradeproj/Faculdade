@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de Usuário"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#222222"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Nome -->
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome completo"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:imeOptions="actionNext"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:imeOptions="actionNext"/>
+
+        <!-- Telefone -->
+        <EditText
+            android:id="@+id/edtTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:imeOptions="actionNext"/>
+
+        <!-- Senha -->
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"
+            android:imeOptions="actionDone"/>
+
+        <!-- Texto longo (para testar scroll) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Termos de Uso do Aplicativo
+
+1. Aceitação dos Termos
+Ao utilizar este aplicativo, você concorda integralmente com os presentes Termos de Uso.
+
+2. Uso do Aplicativo
+Uso pessoal e responsável, respeitando leis e terceiros.
+
+3. Cadastro
+Forneça dados verdadeiros e mantenha sua conta segura.
+
+4. Privacidade
+Seus dados serão tratados conforme a legislação vigente.
+
+5. Responsabilidade
+O uso é por sua conta e risco.
+
+6. Atualizações
+Os termos podem ser alterados a qualquer momento.
+
+(Conteúdo estendido para testar rolagem...)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Botão para abrir termos -->
+        <TextView
+            android:id="@+id/txtAbrirTermos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver termos completos"
+            android:textColor="#1E88E5"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Checkbox -->
+        <CheckBox
+            android:id="@+id/checkTermos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Li e concordo com os termos de uso"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Botão -->
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:enabled="false"
+            android:padding="14dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
